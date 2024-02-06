@@ -1,46 +1,76 @@
-name: Azure Static Web Apps CI/CD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithi Priya Dhanekula's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adithi Priya Dhanekula</h1>
+        <ul>
+            <li>Email: <a href="mailto:ad3342@nau.edu">ad3342@nau.edu</a></li>
+            <li>Phone: 6232399861</li>
+            <li>Location: Nagapur</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/adithipriya">adithipriya</a></li>
+        </ul>
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
+        <h2>Education</h2>
+        <ul>
+            <li>Master of Science in Computer Science</li>
+            <ul>
+                <li>Northern Arizona University, Flagstaff, AZ - Dec 2023</li>
+                <li>GPA: 2.6</li>
+            </ul>
+            <li>Bachelor of Technology in Computer Science & Engineering</li>
+            <ul>
+                <li>Bharath Institute of Higher Education & Research, Chennai TN, India - June 2021</li>
+                <li>GPA: 3.54</li>
+            </ul>
+        </ul>
 
-jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: ubuntu-latest
-    name: Build and Deploy Job
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_MOSS_09D25561E }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "api" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming and Database Languages: Python, SQL</li>
+            <li>Database systems: MongoDB, PostgreSQL, and MySQL</li>
+        </ul>
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    name: Close Pull Request Job
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_MOSS_09D25561E }}
-          action: "close"
+        <h2>Working Experience</h2>
+        <ul>
+            <li>Data Analyst at Johnson Controls (Sep 2023-Present)</li>
+            <ul>
+                <li>Created Python scripts to automate data processing procedures, resulting in a 30% decrease in manual data handling.</li>
+                <li>Innovated and implemented a semi-automatic grading system, which cut grading time by 60%.</li>
+            </ul>
+        </ul>
+
+        <h2>Projects, Experience, and Certifications</h2>
+        <ul>
+            <li>Northern Arizona University offers a graduate certificate in computational data science through Udacity.</li>
+            <li>Data Scientist Nanodegree</li>
+            <li>IBM Data Science Specialization</li>
+        </ul>
+    </div>
+</body>
+</html>
