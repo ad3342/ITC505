@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Adventure Game</title>
+</head>
+<body>
+  <div id="game-container">
+    <div id="story">
+      <p id="story-text">begin your odyssey in a world of dreams & reality</p>
+      <img id="story-image" src="https://neurosciencenews.com/files/2023/09/aphantasia-mental-imagry-neurosciences.jpg" alt="Story Image">
+    </div>
+    <div id="choices"></div>
+    <div class="b">
+    <button id="start-button" onclick="startGame()">Restart</button>
+    </div>
+  </div>
+  <br>
+    <div id="addendum">
+      <h2>Addendum</h2>
+      <p><b>
+      1. Narrative Design:</b><br> Choices lead to unique realms like the Whispering Trees or the Starlit Chamber, creating a tapestry of stories that adapt to each player's journey, fostering a sense of personal adventure and discovery.
+    </p>
+        <p><b>
+      2. Story Depth:</b><br> The narrative's complexity is showcased through multifaceted encounters, such as unearthing hidden enclaves or conversing with age-old spirits, adding layers of intrigue and depth to the gaming experience.
+    </p>
+        <p><b>
+      3. Visual Immersion:</b> <br>Selected images visually anchor each stage, maintaining thematic consistency to enhance the fantasy and mystical experience.
+        </p>
+        <p><b>
+      4. User-Centric Design:</b> <br>The game's design prioritizes user accessibility with a simple, intuitive interface, while its adaptable aesthetics harmoniously align with varying narrative tones, ranging from whimsical to mysterious, ensuring a cohesive and engaging player experience.
+    </p>  
+      <p><b>
+      5. Challenges and Solutions:</b> <br>
+      The game navigates the delicate balance of offering a complex, branching narrative while maintaining user-friendly navigation. It achieves this through intuitive design and adaptive storytelling, ensuring players are engaged but not overwhelmed, enriching the interactive experience.
+    </p>
+      <p><b>
+      6. Interactive Storytelling Insights:</b> <br>Player agency is central to the narrative, as choices distinctly shape the storyline, emphasizing the significance of a focused, streamlined design in crafting a compelling, immersive narrative.
+    </p>
+        <p><b> 7. Conclusion:</b> <br>This interactive narrative serves as a benchmark in narrative-driven gaming, illustrating the effectiveness of combining choice-based gameplay with rich storytelling. It offers valuable insights into the future of interactive narrative development, emphasizing player engagement and story depth.
+        </p>
+        </div>
+    <footer>
+      <p>Last updated: 
+          <span id="lastModified"></span>
+      </p>
+  </footer>
+  <script type="text/javascript">
+       var x = document.lastModified;
+       document.getElementById('lastModified').textContent = x;
+  </script>
+<script src="index.js"></script>
+</body>
+</html>

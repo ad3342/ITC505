@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/wix-madefor-display');
+body {
+  font-family: 'Wix Madefor Display', sans-serif;
+  background-color: #10333a;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #game-container {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #cb6235;
+    border-radius: 8px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding: 25px;
+    padding-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  .b{
+    text-align: center;
+  }
+  #story {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #story-text {
+    margin-bottom: 10px;
+  }
+  
+  #story-image {
+    width: 500px;
+    border-radius: 8px;
+  }
+  
+  #choices {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  #start-button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #cb6235;
+    border-radius: 5px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    
+  }
+  
+  #start-button:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+
+  #addendum {
+    grid-area: footer;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    margin: 20px;
+    padding: 25px;
+    text-align: left;
+    border-top-width: 2px;
+    border-bottom-width: px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #cb6235;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  footer{
+    color: whitesmoke;
+    font-size: 16px;
+  }
+  h2 {
+    color: whitesmoke; 
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 5px;
+    font-size: 23px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: normal;
+  }
